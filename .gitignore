@@ -1,0 +1,8 @@
+.vscode
+bin
+obj
+ca.txt
+.tinyca
+tinyca
+tinyca.exe
+**/*.pem
