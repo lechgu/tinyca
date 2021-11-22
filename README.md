@@ -25,7 +25,7 @@ cp bin/release/net6.0/osx-x64/publish/tinyca .
 ## Running tinyca
 
 ```
-./tinyca init
+tinyca init
 ```
 
 This will create a directory `.tinyca` which contains a self-signed certificate used by the Certificate Authority. By default, the certificate is valid for 10 years.
