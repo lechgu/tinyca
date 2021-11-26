@@ -12,7 +12,7 @@ The simplest way to install TinyCA, if you have .net framework 6.0 installed on 
 dotnet tool install --global TinyCA
 ```
 
-It is also possible to build a self-contained standalone version of TinyCA for your platform/
+It is also possible to build a self-contained standalone version of TinyCA for your platform.
 For example, for MacOS X do
 
 ```
