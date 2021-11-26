@@ -8,7 +8,7 @@ using McMaster.Extensions.CommandLineUtils;
 namespace TinyCA.Commands;
 
 [Command(Name = "init", Description = "Initialize CA's certificate and signing key")]
-class Init
+public class Init
 {
     [Option(ShortName = "x", LongName = "expiry", Description = "certificate expiry, in days, default: 10 years")]
     public int? Expiry { get; set; }

@@ -10,7 +10,7 @@ using McMaster.Extensions.CommandLineUtils;
 namespace TinyCA.Commands;
 
 [Command(Name = "issue", Description = "Issue and sign a certificate")]
-class Issue
+public class Issue
 {
     private const string serverAuthOid = "1.3.6.1.5.5.7.3.1";
     private const string clientAuthOid = "1.3.6.1.5.5.7.3.2";
