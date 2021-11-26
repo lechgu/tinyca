@@ -1,7 +1,6 @@
 .vscode
-bin
-obj
-ca.txt
+**/bin
+**/obj
 .tinyca
 tinyca
 tinyca.exe
