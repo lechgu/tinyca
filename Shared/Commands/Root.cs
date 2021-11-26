@@ -4,7 +4,7 @@ using McMaster.Extensions.CommandLineUtils;
 namespace TinyCA.Commands;
 
 [Command(Name = "tinica ", Description = "Tiny Certificate Authority")]
-[Subcommand(typeof(Init), typeof(Issue))]
+[Subcommand(typeof(Init), typeof(Issue), typeof(Version))]
 public class Root
 {
     public const string Dir = ".tinyca";
