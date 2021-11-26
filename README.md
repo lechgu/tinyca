@@ -1,28 +1,30 @@
-# tinyca
+# TinyCA
 
-Tinyca is a simple Certification Authority. using Tinyca is appropriate to generate certificates to secure non-customer facing network traffic, for instance for the gRPC micro-services.
-Upon initialization, tinyca creates a self-signed certificate which is used subsequently for issuing and signing the child certificates.
-Tinyca runs on Windows, Mac OS X and on Linux.
+TinyCA is a simple Certification Authority. using TinyCA is appropriate to generate certificates to secure non-customer facing network traffic, for instance for the gRPC micro-services.
+Upon initialization, tinyCA creates a self-signed certificate which is used subsequently for issuing and signing the child certificates.
+TinyCA runs on Windows, Mac OS X and on Linux.
 
-## Building tinyca
+## Installing TinyCA
 
-To build tinyca you need to have
-[.net 6 sdk](https://dotnet.microsoft.com/download/dotnet/6.0)
-installed for your system
+The simplest way to install TinyCA, if you have .net framework 6.0 installed on the machine is to install it as a tool
 
 ```
-dotnet build
+dotnet tool install --global TinyCA
 ```
 
-Supplied `makefile` illustrates how to build standalone, self-contained optimized versions of tinyca, for example on Mac OS X
+It is also possible to build a self-contained standalone version of TinyCA for your platform/
+For example, for MacOS X do
 
 ```
-dotnet publish -c release -r osx-x64 --self-contained -p:PublishSingleFile=true -p:PublishReadyToRun=true -p:PublishTrimmed=true
-
-cp bin/release/net6.0/osx-x64/publish/tinyca .
+cd Standalone
+dotnet publish -c Release -r osx-x64 -o .
 ```
 
-## Running tinyca
+This will generate a binary `tinyca`. This binary will run even the .net framework is not installed on the destination machine.
+
+For the correct values of the `-r` parameter, refer [here](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog).
+
+## Running TinyCA
 
 ```
 tinyca init
