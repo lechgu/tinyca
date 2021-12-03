@@ -15,6 +15,9 @@
     <SelfContained>true</SelfContained>
     <ReadyToRun>true</ReadyToRun>
     <PublishTrimmed>true</PublishTrimmed>
+    <DebugType>none</DebugType>
+    <DebugFiles>false</DebugFiles>
+
   </PropertyGroup>
 
 </Project>
