@@ -4,6 +4,5 @@
 .tinyca
 tinyca
 tinyca.exe
-Standalone
 nupkg
 **/*.pem
