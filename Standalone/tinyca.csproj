@@ -11,6 +11,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <PropertyGroup>
+    <PublishSingleFile>true</PublishSingleFile>
     <SelfContained>true</SelfContained>
     <ReadyToRun>true</ReadyToRun>
     <PublishTrimmed>true</PublishTrimmed>
