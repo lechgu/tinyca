@@ -13,7 +13,7 @@
     <PackAsTool>true</PackAsTool>
     <PackageId>TinyCA</PackageId>
     <ToolCommandName>tinyca</ToolCommandName>
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
     <Authors>Lech Gudalewicz</Authors>
     <PackageOutputPath>./nupkg</PackageOutputPath>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>

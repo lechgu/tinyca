@@ -24,7 +24,7 @@ This will generate a binary `tinyca`. This binary will run even the .net framewo
 
 For the correct values of the `-r` parameter, refer [here](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog).
 
-Specify the .Net version with `-f` parameter.
+Specify the .Net version with the `-f` parameter.
 
 ## Running TinyCA
 
