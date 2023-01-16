@@ -6,7 +6,7 @@ namespace TinyCA.Commands;
 [Command(Name = "version", Description = "Show version information")]
 public class Version
 {
-    const string version = "1.1.1";
+    const string version = "1.1.2";
     [SuppressMessage("Performance", "CA1822")]
     public int OnExecute(CommandLineApplication _, IConsole console)
     {

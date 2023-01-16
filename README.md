@@ -41,3 +41,22 @@ tinyca issue --name localhost --dns localhost --ip 127.0.0.1
 ```
 
 This creates a directory `localhost` that contains a certificate and corresponding key valid for the DNS name `localhost` and IP address `127.0.0.1`. Multiple DNS names and/or IP addresses can be provided, if desired. Such child certificate is valid, by default, for one year.
+
+## Making the system to trust certificates signed by TinyCA
+
+#### Mac OSX
+
+In Mac Terminal, run elevated (with `sudo`):
+
+```
+security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain .tinyca/cert.pem
+```
+
+#### Windows
+
+In the Windows terminal, run elevated ("as administrator"):
+
+```
+certutil -addstore Root .tinyca\cert.pem
+
+```

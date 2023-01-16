@@ -13,6 +13,9 @@ public class Init
     [Option(ShortName = "x", LongName = "expiry", Description = "certificate expiry, in days, default: 10 years")]
     public int? Expiry { get; set; }
 
+    [Option(ShortName = "n", LongName = "name", Description = "Subject name for the Certificate Authority")]
+    public string Name { get; set; } = "tinyca";
+
     [SuppressMessage("Performance", "CA1822")]
     public int OnExecute(CommandLineApplication _, IConsole console)
     {
@@ -40,7 +43,7 @@ public class Init
 
     private string CreateCertificate(RSA rsa)
     {
-        var dnNme = new X500DistinguishedName($"CN=tinyca root ca [{Guid.NewGuid()}]");
+        var dnNme = new X500DistinguishedName($"CN={Name}");
         var request = new CertificateRequest(dnNme, rsa, HashAlgorithmName.SHA256, RSASignaturePadding.Pkcs1);
         request.CertificateExtensions.Add(
                         new X509KeyUsageExtension(
