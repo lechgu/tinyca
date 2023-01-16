@@ -51,3 +51,12 @@ In Mac Terminal, run elevated (with `sudo`):
 ```
 security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain .tinyca/cert.pem
 ```
+
+#### Windows
+
+In the Windows terminal, run elevated ("as administrator"):
+
+```
+certutil -addstore Root .tinyca\cert.pem
+
+```
