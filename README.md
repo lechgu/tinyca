@@ -1,6 +1,6 @@
 # TinyCA
 
-TinyCA is a simple Certification Authority. using TinyCA is appropriate to generate certificates to secure non-customer facing network traffic, for instance for the gRPC micro-services.
+TinyCA is a simple Certificate Authority. using TinyCA is appropriate to generate certificates to secure non-customer facing network traffic, for instance for the gRPC micro-services.
 Upon initialization, tinyCA creates a self-signed certificate which is used subsequently for issuing and signing the child certificates.
 TinyCA runs on Windows, Mac OS X and on Linux.
 
