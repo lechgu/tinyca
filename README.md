@@ -6,7 +6,7 @@ TinyCA runs on Windows, Mac OS X and on Linux.
 
 ## Installing TinyCA
 
-The simplest way to install TinyCA, if you have .net framework 6.0 or 7.0 installed on the machine is to install it as a tool
+The simplest way to install TinyCA, if you have .net framework 6.0, 7.0 or 8.0 installed on the machine is to install it as a tool
 
 ```
 dotnet tool install --global TinyCA
@@ -17,7 +17,7 @@ For example, for MacOS X do
 
 ```
 cd Standalone
-dotnet publish -c Release -r osx-x64 -f net7.0 -o .
+dotnet publish -c Release -r osx-x64 -f net8.0 -o .
 ```
 
 This will generate a binary `tinyca`. This binary will run even the .net framework is not installed on the destination machine.
